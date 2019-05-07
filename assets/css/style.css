@@ -191,7 +191,7 @@ section#banner.homeBanner {
 
 section#banner.homeBanner h1 {
   color: #fff;
-  font-size: 35px;
+  font-size: 49px;
   letter-spacing: 3px;
   font-family: "Montserrat-Bold", sans-serif;
 }
@@ -538,7 +538,7 @@ section#values  div.inner,
 ul.values li div.inner,
 section#aboutQlty article div.inner,
 section#contractWho aside div.inner,
-section#contractWho article div.inner { padding: 40px 40px; }
+section#contractWho article div.inner { padding: 85px 40px; }
 
 section#values div.inner { text-align: center; }
 
@@ -557,8 +557,12 @@ section#values article p,
 section#aboutQlty article p,
 section.capRight article p,
 section.capLeft article p,
+section.capLeft article ul,
 section#contactInfo article p,
-section#contractWho article p {
+section#contractWho article p,
+section.blogBanner article p,
+.blog-list li,
+section.blogBanner p {
   font-family: 'Montserrat-Light', sans-serif;
   font-size: 14px;
   color: #444969;
@@ -684,7 +688,7 @@ section.capLeft article h2 { color: #fff; }
 
 section.capLeft article {text-align: left; }
 
-section.capLeft article p { margin-left: auto; color: #fff; }
+section.capLeft article p, section.capLeft article ul { margin-left: auto; color: #fff; }
 
 section.capRight aside span,
 section.capLeft aside span {
@@ -1165,6 +1169,49 @@ ul li a {
  color: #ffffff;
 }
 
-ul {
-  list-style: none;
+
+
+.blogBanner {
+  margin-top: 20px;
 }
+.blogBanner h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.blogBanner p {
+  margin-bottom: 10px;
+}
+
+.blogBanner ul {
+  margin-left: 16px;
+}
+
+section#banner.blogBanner h1 {
+  color: #00000;
+  font-size: 47px;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+section#banner.blogBanner, section#banner.blogBanner.wrapper  {
+  font-family: 'Montserrat-Light', sans-serif
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.end {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.author {
+  font-size: 12px;
+  color: #00000;
+}
+
+
