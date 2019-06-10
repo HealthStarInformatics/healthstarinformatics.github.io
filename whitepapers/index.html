@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="web_author" content="https://geekboots.net" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/carousel.css" />
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li>
-              <a href="about.html" class="active">About <img src="assets/images/down-arrow.svg" /></a>
+              <a href="about.html">About <img src="assets/images/down-arrow.svg" /></a>
               <ul>
                 <li><a href="about.html#mission">Mission & Values</a></li>
                 <li><a href="about.html#leadership">Leadership</a></li>
@@ -28,48 +29,36 @@
             </li>
             <li><a href="capabilities.html">Capabilities</a></li>
             <li>
-              <a href="who-we-are.html">Clients <img src="assets/images/down-arrow.svg" /></a>
+              <a href="who-we-are.html" >Clients <img src="assets/images/down-arrow.svg" /></a>
               <ul>
                 <li><a href="who-we-are.html#ourClients">Our Clients</a></li>
                 <li><a href="who-we-are.html#contract-vehicles">Contract Vehicles</a></li>
               </ul>
             </li>
-            <li><a href="careers.html">Careers</a></li>
+            <li><a href="careers.html" class="active">Careers</a></li>
             <!-- <li><a href="press.html">Press</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section id="banner" class="aboutBanner">
+    <section id="banner" class="whoweareBanner">
       <div class="wrapper">
         <h1>
-          <!-- <small><span>About</span> Us</small><br /> -->
-          Our White papers
+          <small><span>Whitepapers</span></small><br />
+          Our Whitepapers!
         </h1>
       </div>
     </section>
-    <section id="" class=" blogBanner ">
+    <section id="careers">
       <div class="wrapper">
-        <article>
-          <div class="inner">
-<ul class="timeline">
-  <li class="common-list-item">1</li>
-  <li class="common-list-item">2</li>
-  <li class="common-list-item">3</li>
-  
-  <li class="common-list-item">4</li>
-  <li class="common-list-item">5</li>
-  <li class="common-list-item">6</li>
-  
-  <li class="common-list-item">7</li>
-  <li class="common-list-item">8</li>
-  
-</ul>
-    </div>
-  </article>
-</div>
-</section>
+        <h2>Join Us!</h2>
+        <p>Interested in joining a fast paced environment that puts people first?</p>
+        <p>View <a href="https://www.indeedjobs.com/healthstar-informatics/">our current openings</a></p>
+        <p>Email us your resume at <a href="mailto:careers@healthstarinfo.com">careers@healthstarinfo.com</a></p>
+      </div>
+    </section>
+    
     <footer>
       <section>
         <div class="wrapper">
@@ -97,8 +86,12 @@
       </section>
       &copy; 2018 HealthStar Informatics. All Rights Reserved.
     </footer>
-    <script src="assets/js/animateplus.js"></script>
-        <script>
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+            <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -108,14 +101,31 @@
           ga('send', 'pageview');
 
         </script>  
-    <script
-			  src="https://code.jquery.com/jquery-1.12.4.min.js"
-			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-			  crossorigin="anonymous"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('a#menu').on('click',function () {
           $('header nav').slideToggle('slow');
+        });
+
+        $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: false,
+          dots: false,
+            pauseOnHover: false,
+            responsive: [{
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 4
+            }
+          }, {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 3
+            }
+          }]
         });
       });
     </script>
